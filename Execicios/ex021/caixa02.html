@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 5px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 20px;
+            box-shadow: 12px;
+        }
+        main{
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border: 5px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 20px;
+        }
+        #assuntos{
+            padding: 10px;
+            font-weight: bolder;
+        }
+        #noticias{
+            box-shadow: 5px 5px 5px rgb(154, 152, 152);
+            border: 5px 5px black;   
+        }
+        footer{
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        width: 220px;
+        font-style: italic;
+        border: 5px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 20px;
+        }
+        article{
+            background-color: aliceblue;
+        }
+        article > aside{
+            background-color: rgb(213, 210, 206);
+            width: 300px;
+            padding: 5px auto 5px auto;
+            font-style: italic;
+        }
+        nav{
+            background-color: rgb(146, 146, 146);
+            padding: 10px;
+            box-shadow: 5 px 5px 5px black;
+            border-radius: 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+        </nav>
+    </header>
+    <main>
+         <section id="assuntos">
+                <h2>Linguagem de Marcação HTML</h2>
+         </section>
+         <section id="noticias">
+                <article>
+                    <h3>História do HTML</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus, consequuntur consequatur voluptatem corrupti dolorem illum, quisquam nisi debitis unde eos veritatis commodi quibusdam quam quae obcaecati ipsum magni accusantium.</p>
+                    <aside>
+                        <p>Artigo escrito por João Pedro da silva</p>
+                    </aside>
+                </article>
+         </section>
+    </main>
+    <footer>
+         <p>Desenvolvido por Vitor Dalpino</p>
+    </footer>
+</body>
+</html>
